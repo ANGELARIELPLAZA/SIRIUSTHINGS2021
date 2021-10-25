@@ -5,7 +5,7 @@
     <title>SIRIUS THINGS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Bootstraps Java Scipts Links -->
@@ -28,6 +28,32 @@
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
+<style>
+   body{
+   zoom:80%; 
+   }
+   .tarea {
+    float: right;
+    width: 27%;
+    height: 35rem;
+    background: white;
+    border-color: black;
+    border-width: 1px;
+    padding: 20px;
+    margin: 0% 1% 0% 0%;
+    border-radius: 10px;
+}
+.mesa {
+    float: left;
+    padding: 24px;
+    width: 70%;
+    background-color: white;
+    height: 35rem;
+    margin: 0% 1% 0% 1%;
+    border-radius: 10px;
+    /* only for demonstration, should be removed */
+}
+</style>
 
 <body>
     <header>
@@ -115,12 +141,17 @@
                         <figure class="highcharts-figure">
                             <div id="container-speed" class="chart-container"></div>
                             <div id="container-rpm" class="chart-container"></div>
+                            <div id="container-IC" class="chart-container"></div>
+                            <div id="container-CD" class="chart-container"></div>
                         </figure>
                     </div>
                 </div>
             </div>
         </div>
         <section></section>
+   <br>
+     
+        
         <footer>
             <p>Copyright © 2024. All rights reserved. SIRIUS THINGS.</p>
         </footer>
