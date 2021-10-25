@@ -23,22 +23,22 @@ def jetson():
 @app.route("/arduino", methods=["GET", "POST"])
 def jetson():
 	datos = request.form.to_dict(flat=True)
-  	print(datos)
+  print(datos)
    #########################################
-  	valores1 = datos.get("mesa1")
+  valores1 = datos.get("mesa1")
    #########################################
-   	print(valores1)
-   	return render_template('arduino.html')
+  print(valores1)
+  return render_template('arduino.html')
 
 
 @app.route("/esp8266", methods=["GET", "POST"])
 def jetson():
 	datos = request.form.to_dict(flat=True)
-   	print(datos)
+  print(datos)
    #########################################
-   	valores1 = datos.get("mesa1")
+  valores1 = datos.get("mesa1")
    #########################################
-   	print(valores1)
+  print(valores1)
 
 	return render_template('esp8266.html')
 
