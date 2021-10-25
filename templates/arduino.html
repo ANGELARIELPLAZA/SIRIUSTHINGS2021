@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Bootstraps Java Scipts Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- JQuery links  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--High CHART LIVE  -->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <!--Gauge  -->
+    <script type="text/javascript" src="http://pubnub.github.io/eon/lib/eon.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+
+<body>
+    <header>
+        <h2>DASHBOARD</h2>
+    </header>
+    <section>
+        <nav class="nav">
+            <div>
+                <li class="nav-item">
+                    <a class="nav-link" href="raspi.html">Rasberry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="jetson.html">Jetson Nano</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Arduino</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Esp8266</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Data</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Editor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Mensajes</a>
+                </li>
+            </div>
+        </nav>
+        <div class="tarea">
+            <div class="text-center">
+                <p>CODE-TAREA</p>
+                <span class="btn btn-success fileinput-button">
+                    <span> Subir </span>
+                    <input type="file">
+                </span>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Para subir tu codigo .ino deberas considerar los siguientes puntos.</p>
+            </div>
+            <div class="row">
+                <div class="col-4 d-flex">
+                    <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Webcam</a>
+                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Velocidad</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Opencv</a>
+                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">info</a>
+                    </div>
+                </div>
+                <div class="col-4 d-flex">
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                            Lorem ipsum
+                            dolor sit
+                            consectetur
+                            adipiscing.
+                        </div>
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mesa">
+            <div class="data text-center">
+                <h3>TABLERO IOT 4.0 - ARDUINO</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="data text-center">
+                            <img src="static/img/cam.png" width="350" height="250" class=" rounded">
+                            <div>
+                                <button type="button" class="btn btn-success btn-lg ">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <figure class="highcharts-figure">
+                            <div id="container-speed" class="chart-container"></div>
+                            <div id="container-rpm" class="chart-container"></div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section></section>
+        <footer>
+            <p>Copyright © 2024. All rights reserved. SIRIUS THINGS.</p>
+        </footer>
+        <script>
+        $(document).ready(function() {
+            // --------------Chart 1 ----------------------------
+            chartTemperatue = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'data-temperature',
+                    defaultSeriesType: 'area',
+                    events: {
+                        load: requestData
+                    }
+                },
+                title: {
+                    text: 'Temperature'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    tickPixelInterval: 150,
+                    maxZoom: 20 * 1000
+                },
+                yAxis: {
+                    minPadding: 0.2,
+                    maxPadding: 0.2,
+                    title: {
+                        text: 'Value',
+                        margin: 80
+                    }
+                },
+                series: [{
+                    color: '#c23d23',
+                    lineColor: '#303030',
+                    name: 'Temperature',
+                    data: []
+                }]
+            });
+            // --------------Chart 1 Ends - -----------------
+
+            chartHumidity = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'data-humidity',
+                    defaultSeriesType: 'area',
+                    events: {
+                        load: requestData
+                    }
+                },
+                title: {
+                    text: 'Humidity'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    tickPixelInterval: 150,
+                    maxZoom: 20 * 1000
+                },
+                yAxis: {
+                    minPadding: 0.2,
+                    maxPadding: 0.2,
+                    title: {
+                        text: 'Value',
+                        margin: 80
+                    }
+                },
+                series: [{
+                    lineColor: '#1d82b8',
+                    name: 'Humidity',
+                    data: []
+                }]
+            });
+
+
+        });
+        var gaugeOptions = {
+            chart: {
+                type: 'solidgauge'
+            },
+
+            title: null,
+
+            pane: {
+                center: ['50%', '85%'],
+                size: '140%',
+                startAngle: -90,
+                endAngle: 90,
+                background: {
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || '#EEE',
+                    innerRadius: '60%',
+                    outerRadius: '100%',
+                    shape: 'arc'
+                }
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            tooltip: {
+                enabled: false
+            },
+
+            // the value axis
+            yAxis: {
+                stops: [
+                    [0.1, '#55BF3B'], // green
+                    [0.5, '#DDDF0D'], // yellow
+                    [0.9, '#DF5353'] // red
+                ],
+                lineWidth: 0,
+                tickWidth: 0,
+                minorTickInterval: null,
+                tickAmount: 2,
+                title: {
+                    y: -70
+                },
+                labels: {
+                    y: 16
+                }
+            },
+
+            plotOptions: {
+                solidgauge: {
+                    dataLabels: {
+                        y: 5,
+                        borderWidth: 0,
+                        useHTML: true
+                    }
+                }
+            }
+        };
+
+        // The speed gauge
+        var chartSpeed = Highcharts.chart('container-speed', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: 0,
+                max: 200,
+                title: {
+                    text: 'Speed'
+                }
+            },
+
+            credits: {
+                enabled: false
+            },
+
+            series: [{
+                name: 'Speed',
+                data: [80],
+                dataLabels: {
+                    format: '<div style="text-align:center">' +
+                        '<span style="font-size:25px">{y}</span><br/>' +
+                        '<span style="font-size:12px;opacity:0.4">km/h</span>' +
+                        '</div>'
+                },
+                tooltip: {
+                    valueSuffix: ' km/h'
+                }
+            }]
+
+        }));
+
+        // The TEMP gauge
+        var chartTEMP = Highcharts.chart('container-rpm', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: 30,
+                max: 50,
+                title: {
+                    text: 'TEMP'
+                }
+            },
+
+            series: [{
+                name: 'RPM',
+                data: [1],
+                dataLabels: {
+                    format: '<div style="text-align:center">' +
+                        '<span style="font-size:25px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:12px;opacity:0.4">' +
+                        ' C' +
+                        '</span>' +
+                        '</div>'
+                },
+                tooltip: {
+                    valueSuffix: ' revolutions/min'
+                }
+            }]
+
+        }));
+
+        // The IC gauge
+        var chartIC = Highcharts.chart('container-IC', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: 0,
+                max: 1000,
+                title: {
+                    text: 'PANEL SOLAR'
+                }
+            },
+
+            series: [{
+                name: 'RPM',
+                data: [1],
+                dataLabels: {
+                    format: '<div style="text-align:center">' +
+                        '<span style="font-size:25px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:12px;opacity:0.4">' +
+                        ' mA' +
+                        '</span>' +
+                        '</div>'
+                },
+                tooltip: {
+                    valueSuffix: ' revolutions/min'
+                }
+            }]
+
+        }));
+
+        // The CD gauge
+        var chartCD = Highcharts.chart('container-CD', Highcharts.merge(gaugeOptions, {
+            yAxis: {
+                min: 0,
+                max: 99,
+                title: {
+                    text: 'PRESION'
+                }
+            },
+
+            series: [{
+                name: 'RPM',
+                data: [1],
+                dataLabels: {
+                    format: '<div style="text-align:center">' +
+                        '<span style="font-size:25px">{y:.1f}</span><br/>' +
+                        '<span style="font-size:12px;opacity:0.4">' +
+                        '* 1000 / min' +
+                        '</span>' +
+                        '</div>'
+                },
+                tooltip: {
+                    valueSuffix: ' revolutions/min'
+                }
+            }]
+
+        }));
+
+        // Bring life to the dials
+        setInterval(function() {
+            // Speed
+            var point,
+                newVal,
+                inc;
+
+            if (chartSpeed) {
+                point = chartSpeed.series[0].points[0];
+                inc = Math.round((Math.random() - 0.5) * 100);
+                newVal = point.y + inc;
+
+                if (newVal < 0 || newVal > 200) {
+                    newVal = point.y - inc;
+                }
+
+                point.update(newVal);
+            }
+            // CD
+            if (chartCD) {
+                point = chartCD.series[0].points[0];
+                point.update(80);
+            }
+            // CD
+            if (chartIC) {
+                point = chartIC.series[0].points[0];
+                point.update(80);
+            }
+
+            // TEMP
+            if (chartTEMP) {
+                point = chartTEMP.series[0].points[0];
+                inc = Math.random();
+                newVal = point.y + inc;
+
+                if (newVal < 50 || newVal > 30) {
+                    newVal = point.y - inc;
+                }
+
+                point.update(newVal);
+            }
+        }, 10000);
+        </script>
+</body>
+
+</html>
