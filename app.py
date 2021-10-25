@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=["GET", "POST"])
 def main():
        
-    return render_template('index.html')
+    return render_template('raspi.html')
 
 
 @app.route('/data', methods=["GET", "POST"])
