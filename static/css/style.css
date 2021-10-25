@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#F5F5FF, #1b396a);
+}
+
+/* Style the header */
+header {
+    /*background-color: #666;*/
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+nav {
+    justify-content: center;
+    padding: 1%;
+}
+
+li.nav-item {}
+
+nav div {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+}
+
+.tarea {
+    float: right;
+    width: 27%;
+    height: 27.5rem;
+    background: white;
+    border-color: black;
+    border-width: 1px;
+    padding: 20px;
+    margin: 0% 1% 0% 0%;
+    border-radius: 10px;
+}
+
+.fileinput-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.fileinput-button input {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+}
+
+/* Style the list inside the menu */
+.tarea ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mesa {
+    float: left;
+    padding: 24px;
+    width: 70%;
+    background-color: white;
+    height: 27.5rem;
+    margin: 0% 1% 0% 1%;
+    border-radius: 10px;
+    /* only for demonstration, should be removed */
+}
+
+.mesa data {
+    height: 300px;
+    float: left;
+}
+
+.mesa h3 {
+    padding-bottom: 15px;
+}
+
+.data {
+    padding-bottom: 8px;
+}
+
+.highcharts-figure .chart-container {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+.highcharts-figure,
+.highcharts-data-table table {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #EBEBEB;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+@media (max-width: 600px) {
+
+    .highcharts-figure,
+    .highcharts-data-table table {
+        width: 100%;
+    }
+
+    .highcharts-figure .chart-container {
+        width: 300px;
+        float: none;
+        margin: 0 auto;
+    }
+
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.row {
+   
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    align-content: center;
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    /*background-color: #777;*/
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
