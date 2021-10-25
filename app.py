@@ -24,9 +24,9 @@ def jetson():
 def jetson():
 	datos = request.form.to_dict(flat=True)
   print(datos)
-   #########################################
+  #########################################
   valores1 = datos.get("mesa1")
-   #########################################
+  #########################################
   print(valores1)
   return render_template('arduino.html')
 
@@ -35,9 +35,9 @@ def jetson():
 def jetson():
 	datos = request.form.to_dict(flat=True)
   print(datos)
-   #########################################
+  #########################################
   valores1 = datos.get("mesa1")
-   #########################################
+  #########################################
   print(valores1)
 
 	return render_template('esp8266.html')
